@@ -7,12 +7,12 @@ Beautify your Living Space with Nectar Decors.
 
 ## Screens
 
-- Home
-- Products
-- Log In
-- Sign Up
-- Cart
-- Wishlist
+- [Home](https://nectar-decor.netlify.app)
+- [Products](https://nectar-decor.netlify.app/pages/products.html)
+- [LogIn](https://nectar-decor.netlify.app/pages/longin.html)
+- [SignUp](https://nectar-decor.netlify.app/pages/signup.html)
+- [Cart](https://nectar-decor.netlify.app/pages/cart.html)
+- [Wishlist](https://nectar-decor.netlify.app/pages/wishlist.html)
 
 
 ## Demo
