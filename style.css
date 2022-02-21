@@ -41,9 +41,7 @@ html {
 
 .categories-card {
     border: 2px solid var(--border);
-    /* box-shadow:
-        2px 4px 8px hsl(0deg 0% 0% / 0.25);
-        border-radius: 0.2rem; */
+
 }
 
 .categories-card :hover {
