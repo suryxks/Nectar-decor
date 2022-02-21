@@ -29,6 +29,9 @@
     justify-content: space-between;
     accent-color: var(--cta);
 }
+.form-accept-signup{
+    accent-color: var(--cta);
+}
 .login-link{
     text-decoration: none;
     color:var(--cta);
