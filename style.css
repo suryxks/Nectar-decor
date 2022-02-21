@@ -3,12 +3,18 @@ html {
     --cta-light: #fbcfe8;
     --border: #e5f0f0;
     --shadow:2px 4px 8px hsl(0deg 0% 0% / 0.25);
+
 }
 
 .hero-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     padding: 0;
+    
+    
 }
 
 .hero-sec>img {
