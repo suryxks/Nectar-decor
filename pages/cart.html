@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="https://nectarui.netlify.app/components/css/components.css" />
+</head>
+
+<body>
+    <nav class="header-nav">
+        <div class="brand">
+            <a href="/">
+                <h2 class="heading-lg">Nectar Decors</h2>
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text">
+            <img src="/assets/search.svg" class="search-icon">
+        </div>
+        <div class="actions">
+            <a href="/pages/wishlist.html" class=""><img src="/assets/heart.svg" class="action"></a>
+            <a href="/pages/cart.html" class=""><img src="/assets/shopping-bag.svg" class="action"></a>
+            <a href="#" class=""><img src="/assets/user (1).svg" class="action"></a>
+        </div>
+    </nav>
+    <h1 class="heading-xl text-center">My Cart</h1>
+    <div class="cart">
+        <div class="horizontal-card">
+            <img src="/assets/wall-decor-wth-bg.jpg">
+            <div class="details">
+                <h3 class="heading-md">Art Street</h3>
+                <p class="text-md fw-light">
+                    Black Solid Set Of 6 Wall Photo Frames</p>
+                <div class="price">
+                    <h4 class="heading-sm">Rs.499</h4>
+                    <h4 class="strike">Rs.599</h4>
+                </div>
+                <div class="quantity">
+                    Quantity
+                    <button>+</button><input type="number" value="2"><button>-</button>
+                </div>
+                <div class="horizontal-card-btn">
+
+                    <button class="btn-cta">Remove from cart</button>
+                    <button class="btn-cta-outline">Move to Wishlist</button>
+                </div>
+            </div>
+        </div>
+        <div class="bill">
+            <h3 class="heading-md text-center"> Price Details</h3>
+            <hr>
+            <div class="bill-item">
+                <p class="text-sm">Price</p>
+                <p class="text-sm">Rs.1198</p>
+
+            </div>
+            <div class="bill-item">
+                <p class="text-sm">Discount</p>
+                <p class="text-sm">-Rs.200</p>
+
+            </div>
+            <hr>
+            <div class="bill-item">
+                <h3 class="heading-sm">Total</h3>
+                <h3 class="heading-sm">Rs.998</h3>
+
+            </div>
+            <hr>
+            <p class="text-sm">You will save Rs.200 in This order</p>
+            <button class="btn-cta">Place order</button>
+        </div>
+    </div>
+</body>
+
+</html>
