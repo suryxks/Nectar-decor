@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./authentication.css">
+    <link rel="stylesheet" href="https://nectarui.netlify.app/components/css/components.css" />
+</head>
+<body>
+    <nav class="header-nav">
+        <div class="brand">
+            <a href="/">
+                <h2 class="heading-lg">Nectar Decors</h2>
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text">
+            <img src="/assets/search.svg" class="search-icon">
+        </div>
+        <div class="actions">
+            <a href="/pages/wishlist.html" class=""><img src="/assets/heart.svg" class="action"></a>
+            <a href="/pages/cart.html" class=""><img src="/assets/shopping-bag.svg" class="action"></a>
+            <a href="/pages/longin.html" class=""><img src="/assets/user (1).svg" class="action"></a>
+        </div>
+    </nav>
+    <h1 class="heading-xl text-center">Sign Up</h1>
+    <div class="form-container display">
+        <form class="form-grp">
+           <label class="text-md" for="email">Email address</label>
+           <input type="email" placeholder="johndoe@something.com" name="email">
+           <label class="text-md" for="password">Enter Password</label>
+           <input type="password" name="password">
+           <div class="form-accept"> 
+           <input type="checkbox"><label>I accept all terms and conditions</label>
+        </div>
+           <button class="btn-cta">Sign Up</button>
+        </form>
+        <a href="/pages/longin.html" class="text-sm fw-semibold login-link">Already Have an account >
+
+        </a>
+      </div>
+</body>
+</html>
