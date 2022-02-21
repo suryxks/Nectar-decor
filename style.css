@@ -2,6 +2,7 @@ html {
     height: 100%;
     --cta-light: #fbcfe8;
     --border: #e5f0f0;
+    --shadow:2px 4px 8px hsl(0deg 0% 0% / 0.25);
 }
 
 .hero-sec {
@@ -46,8 +47,7 @@ html {
 
 .categories-card :hover {
     border-radius: 0.2rem;
-    box-shadow:
-        2px 4px 8px hsl(0deg 0% 0% / 0.25);
+    box-shadow:var(--shadow);
     border-radius: 0.2rem;
 }
 
@@ -72,18 +72,19 @@ html {
 .horizontal-card-btn {
     display: flex;
     flex-direction: column;
-
+     align-items: stretch;
     justify-content: center;
-    width: 80%;
+    width: 100%;
+
 }
+    
 
 .btn-cta-outline {
     font-size: 1.5rem;
     background-color: var(--white);
     color: var(--cta);
     border: none;
-    box-shadow:
-        2px 4px 8px hsl(0deg 0% 0% / 0.25);
+    box-shadow:var(--shadow);
     border-radius: 0.2rem;
     padding: 0;
     width: 80%;

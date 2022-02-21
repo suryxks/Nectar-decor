@@ -1,0 +1,78 @@
+@import url('/style.css');
+
+.filter-value {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.filter {
+    accent-color: var(--cta);
+}
+
+.filter-wrapper>h3 {
+    margin: 0;
+}
+
+.vertical-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 14rem;
+    border: 2px var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 0.3rem;
+    margin: 1rem;
+}
+
+.btn-cta-verticl {
+    font-size: 0.5rem;
+    display: inline-block;
+}
+
+.btn-cta-outlined-vertical {
+    font-size: 1rem;
+    background-color: var(--white);
+    color: var(--cta);
+    border: none;
+    box-shadow: var(--shadow);
+    border-radius: 0.2rem;
+    padding: 0;
+    width: 80%;
+    margin-left: 1rem;
+    padding: 0.3rem;
+}
+
+.btn-cta {
+    margin: 0rem;
+    border: none;
+    width: 80%;
+}
+
+.btn-cta-vertical {
+    width: 100%;
+    font-size: 1.5rem;
+    display: inline-block;
+    background-color: var(--cta);
+    color: var(--white);
+    border: none;
+    border-radius: 0.2rem;
+
+}
+
+.main-sec {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.product-listing {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
