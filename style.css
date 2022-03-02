@@ -5,7 +5,9 @@ html {
     --shadow:2px 4px 8px hsl(0deg 0% 0% / 0.25);
 
 }
-
+body{
+    display: grid;
+}
 .hero-sec {
     display: flex;
     align-items: center;
@@ -16,6 +18,7 @@ html {
     
     
 }
+
 .brand>h2{
     display: inline-block;
 }
@@ -29,8 +32,9 @@ html {
 .categories {
     width: 70%;
     margin: 1rem auto;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
 }
 
 .categories>img {
@@ -76,6 +80,11 @@ html {
 .details>h3 {
     margin: 0;
 }
+.header-nav{
+    background: var(--white);
+    isolation: isolate;
+    z-index: 1;
+}
 
 .horizontal-card-btn {
     display: flex;
@@ -96,34 +105,91 @@ html {
     border-radius: 0.2rem;
     padding: 0;
     width: 80%;
-    margin-left: 1rem;
-    padding: 0.3rem;
+     margin-top: 0.5rem;
+    padding: 0.3rem 0.6rem;
 }
 
 .btn-cta {
     margin: 0rem;
     border: none;
     width: 80%;
+    padding: 0.3rem 0.6rem;
 }
 .btn-cta-outline:hover{
     background-color: var(--cta);
     color: var(--white);
 }
-@media(max-width:600px){
+.brand>a{
+    display: inline-block;
+}
+
+@media (max-width: 1100px) {
+    html{
+        font-size: 75%;
+    }
+    /* Tablets */
+    .search-bar{
+        display: none;
+    }
+    .categories {
+      
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-txt{
+        max-width: 70%;
+    }
+    .special{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .categories-card {
+    margin-bottom: 1rem;
+    
+    }
+}
+
+
+@media(max-width:550px){
     html{
         font-size: 62.5%;
     }
     .search{
-        display: none;
+        display: none ;
     }
     .special{
         flex-direction: column;
     }
-    .horizontal-card{
-        max-width: 90vw;
-    }
     .horizontal-card>img{
+        max-width: 150px;
+        object-fit: cover;
+    }
+    /* .horizontal-card>img{
         max-width: 50vw;
         object-fit: contain;
+    } */
+    .categories {
+      
+        grid-template-columns: 1fr;
+        place-items: center;
     }
+    .hero-img{
+        display: none;
+    }
+    .hero-txt{
+        max-width: 70%;
+    }
+    .special{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .categories-card {
+        margin-bottom: 1rem;
+        
+        }
 }
